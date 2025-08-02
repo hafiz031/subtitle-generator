@@ -1,5 +1,6 @@
 data
 output
+.vscode
 __pycache__/
 
 # Bytecode
