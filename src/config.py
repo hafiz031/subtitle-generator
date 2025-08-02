@@ -1,3 +1,4 @@
 HARD_BURN_SUBTITLE = True
 WHISPER_MODEL_SIZE = "tiny"
+OUTPUT_FORMAT = "srt"
 OUTPUT_DIR = "output"
