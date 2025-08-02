@@ -8,8 +8,8 @@ from config import (
 
 def translate(input_dir, 
             source_language, 
+            output_id,
             model_size = WHISPER_MODEL_SIZE, 
-            output_format = OUTPUT_FORMAT,
-            output_dir = OUTPUT_DIR):
+            output_format = OUTPUT_FORMAT):
     
-    os.system(f"whisper {input_dir} --model {model_size} --output_format {output_format} --language {source_language} --output_dir {output_dir} --task translate")
+    os.system(f"whisper {input_dir} --model {model_size} --output_format {output_format} --language {source_language} --output_dir {os.path.join(OUTPUT_DIR, output_id)} --task translate")
